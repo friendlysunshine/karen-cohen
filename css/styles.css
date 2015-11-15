@@ -1,0 +1,175 @@
+@import url(../fonts/fiolexgirls/stylesheet.css);
+@import url(../fonts/architechtsdaughter/stylesheet.css);
+
+img { max-width: 100%; height: auto; }
+body { 
+	background-color: #885a90; color: #885a90; 
+	background-image: url(../img/lavenderField.jpg);
+	background-size: cover;
+	margin: 10px;
+	
+}
+
+#container {
+	background-color: #885a90;; 
+	outline: solid 1px black;
+	width: 90%;
+	min-width: 320px; 
+	max-width: 1000px;
+	margin: auto;
+	color: #885a90;
+	border: solid 10px #fad4f7;
+
+}
+
+h1 {
+	font-family: 'architects_daughterregular';
+	color: #885a90;
+}
+
+#massageTag {
+	border: solid 10px #fad4f7;
+	border-radius: 15px;
+	/*height: 375px;*/
+	display: block;
+	margin: auto;
+
+
+}
+
+/*-------------------------------------
+| Section 2 CSS Services
+-------------------------------------*/
+
+
+#collage {
+	
+}
+nav 	{ background-color: #fad4f7; padding: 10px; }
+#main 	{ background-color: #FFFAE3; }
+footer 	{ background-color: #FFFAE3; padding: 10px; line-height: 600px;}
+
+
+
+/*-------------------------------------
+| Section 3 Resources
+-------------------------------------*/
+
+#resourceLogos {
+	text-align: center;
+}
+
+
+/*-------------------------------------
+| nav
+-------------------------------------*/
+nav { text-align: center; min-height: 70px; }
+nav a {
+	display: inline-block;
+	line-height: 50px; 
+	color: #233D7A;
+	padding: 0px 20px;
+	font-size: 20px;
+}
+nav a:hover { /*background-color: #6E71C4;*/ color: #fff; text-decoration: none; }
+nav a.chosen {  color: #000; }
+
+/*-------------------------------------
+| Hamburger Menu Toggle
+-------------------------------------*/
+nav { min-height: 70px;}
+nav .glyphicon-menu-hamburger {
+	font-size: 30px;
+	color: #4A000C;
+	line-height: 50px;
+}
+nav a {
+	display: block;
+	margin: 10px auto;
+}
+
+@media screen and (min-width:700px) {
+	nav .glyphicon-menu-hamburger { display: none; }
+
+	nav a { display: inline-block; margin: 0px; }
+}
+
+/*-------------------------------------
+| Main
+-------------------------------------*/
+header {
+	line-height: 140px;
+	font-size: 80px;
+	text-align: center;
+	background-color: #FFFAE3; padding: 0px; 
+	font-family: 'fiolex_girlsregular';
+}
+footer {
+	line-height: 40px;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+/*-------------------------------------
+| Sections
+-------------------------------------*/
+#main section { min-height: 300px; padding: 20px }
+#main section:nth-of-type(even) { background-color: #F3ECCD; }
+
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
+#main section {
+	/*min-height: 600px;*/
+}
+
+.pinned nav {
+	position: fixed;
+	top: 0px; 
+	left: 0px; 
+	right: 0px;
+	z-index: 3000;
+}
+
+.pinned header {
+	margin-bottom: 70px;
+}
+
+/*-------------------------------------
+| Glyphicons
+-------------------------------------*/
+
+
+.glyphicon {
+	font-size: 20px;
+	color: #AF1BC1;
+	transition: .5s all;
+}
+
+
+.glyphicon:hover {
+	font-size: 30px;
+	color: #7052DA;
+	
+}
+
+
+/*-------------------------------------
+| Back to Top
+-------------------------------------*/
+#backToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	top: auto;
+
+	display: none;
+}
+
+
+
+
+
+
+

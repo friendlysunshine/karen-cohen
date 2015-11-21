@@ -181,9 +181,36 @@ my_box_class(); //when page loads
 $(window).resize(my_box_class); //whenever resized
 
 
+/*-------------------------------------
+| Phone App Plugin Stuff
+-------------------------------------*/
 
+spinnerplugin.show(); //show spinner
 
+spinnerplugin.show({
+    overlay: false,    // defaults to true
+    timeout: 30,       // defaults to 0 (no timeout)
+    fullscreen: true,  // defaults to false
+});
 
+spinnerplugin.hide(); //hide spinner
+
+onDeviceReady: function() {
+    // Native loading spinner
+    if (window.spinnerplugin) {
+        $.extend($.mobile, {
+            loading: function() {
+                // Show/hide spinner
+                var arg = arguments ? arguments[0] : '';
+                if (arg == 'show') spinnerplugin.show({'overlay':true});
+                else if (arg == 'hide') spinnerplugin.hide();           
+
+                // Compatibility with jQM 1.4
+                return { loader: function() { } }
+            }
+        }); 
+    }
+}
 
 
 

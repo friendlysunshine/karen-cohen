@@ -18,6 +18,6 @@
         Karen Cohen
     </author>
 
-        <gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
+        <gap:plugin name="nl.x-services.plugins.socialsharing" />
 
 </widget>

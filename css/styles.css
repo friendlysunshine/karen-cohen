@@ -174,9 +174,11 @@ footer {
 
 
 #fb {
-	background-color: pink;
-	color: black;
+	background-color: purple;
+	color: white;
 	padding: 5px;
+	border-radius: 10px;
+	/*text-align: center;*/
 	/*float: left;*/
 	/*font-size: 50px;*/
 	/*background-image: url(share.png);*/
@@ -186,6 +188,7 @@ footer {
 	/*float: left;*/
 	width: 50px;
 	height: 60px;
-	
+	/*text-align: center;*/
+
 }
 
